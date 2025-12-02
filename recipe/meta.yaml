@@ -1,6 +1,6 @@
 {% set name = "sbpy" %}
 {% set version = "0.6.0" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -23,12 +23,12 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.21.0
+    - numpy >=1.24.0
     - astropy-base >=5.3.3
     - ads >=0.12
     - synphot >=1.1.1
     - astroquery >=0.4.5
-    - scipy >=1.6
+    - scipy >=1.10
     - photutils
     - pyyaml
     - ginga
