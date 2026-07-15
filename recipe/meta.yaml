@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.24.0
+    - numpy >=1.26.0
     - astropy-base >=5.3.3
     - ads >=0.12
     - synphot >=1.1.1
@@ -34,6 +34,8 @@ requirements:
     - ginga
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sbpy
     - sbpy.units
